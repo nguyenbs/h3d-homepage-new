@@ -1,0 +1,62 @@
+  .snip1226 {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    font-weight: 500;
+    background: rgb(240,240,240);
+    padding-bottom: 3px;
+    padding-top: 7.5px;
+  }
+  .snip1226 * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1226 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
+  }
+  .snip1226 a {
+    padding: 0.3em 0;
+    color: #444444;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .snip1226 a:before,
+  .snip1226 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1226 a:before {
+    bottom: 100%;
+    display: block;
+    height: 2px;
+    width: 100%;
+    content: "";
+    background-color: rgba(60,151,100,1);
+  }
+  .snip1226 a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: rgba(60,151,100,1);
+    white-space: nowrap;
+  }
+  .snip1226 li:hover a,
+  .snip1226 .current a {
+    transform: translateY(100%);
+  }
+  
+  @media all and (max-width: 1370px){
+    .snip1226 a{
+      font-size: 14px;
+    }
+  }

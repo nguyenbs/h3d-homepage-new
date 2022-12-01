@@ -1,0 +1,233 @@
+body {
+  background: #e6e6e6;
+  font-family: Helvetica,Arial,  sans-serif !important;
+  font-weight: 400;
+}
+
+/*===== Vertical Timeline =====*/
+#conference-timeline {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+  display: table;
+  font-family: Helvetica,Arial,  sans-serif !important;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #3c9764;
+  padding: 15px 23px;
+  color: #fff;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+#conference-timeline .conference-center-line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  background: #3c9764;
+  z-index: -1;
+}
+.conference-center-line::after{
+  content: "";
+  border: solid rgba(60,151,100,1);;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background: transparent;
+  transform:  translateX(-50%) rotate(45deg);
+  -webkit-transform:  translateX(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) rotate(45deg);
+  -o-transform:  translateX(-50%) rotate(45deg);
+  transform:  translateX(-50%) rotate(45deg);
+}
+#conference-timeline .conference-timeline-content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+.timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+  max-width: 44%;
+  width: 100%;
+}
+.timeline-article .timeline-launch-version, .timeline-article .timeline-not-launch-version {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.timeline-launch-version, .timeline-launch-version i {
+  color: #3c9764 !important;
+}
+
+.timeline-not-launch-version, .timeline-not-launch-version i {
+  color: #ff0000 !important;
+}
+
+.timeline-article .content-left,
+.timeline-article .content-right {
+  position: relative;
+  width: auto;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.03);
+  padding: 27px 25px;
+}
+.timeline-article p {
+  margin: 0 0 0 60px;
+  padding: 0;
+  font-weight: 400;
+  color: #444444;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+}
+.timeline-article p span.article-number {
+  position: absolute;
+  font-weight: 300;
+  font-size: 20px;
+  top: 10px;
+  left: -60px;
+  color: #3c9764;
+}
+.timeline-article .content-left-container {
+  float: left;
+}
+.timeline-article .content-right-container {
+  float: right;
+}
+.timeline-article .content-left:before,
+.timeline-article .content-right:before{
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+.timeline-article .content-left:before {
+  content: "\f0da";
+  right: -8px;
+}
+.timeline-article .content-right:before {
+  content: "\f0d9";
+  left: -8px;
+}
+.timeline-article .meta-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  height: 62px;
+  margin-left: -50px;
+  color: #fff;
+  border-radius: 100%;
+  background: #3c9764;
+}
+.timeline-article .meta-date .date,
+.timeline-article .meta-date .month {
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+.timeline-article .meta-date .date {
+  font-size: 18px;
+  line-height: 40px;
+}
+.timeline-article .meta-date .month {
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.timeline-article-title {
+  font-weight: bold;
+  color: #3c9764;
+}
+
+.timeline-article .content-left-container, .timeline-article .content-right-container {
+  margin-bottom: 20px;
+}
+
+.svg-fa-ribbon {
+  float:top;
+  color: #3c9764;
+}
+
+.r-d-item-icon, .r-d-item-title{
+  color: #3c9764 !important;
+  font-weight: bold;
+}
+
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    margin: 0;
+  }
+  #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 50px;
+  }
+  .timeline-article .meta-date {
+    margin-left: 0;
+    left: 1px;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+  .timeline-article .content-left:before {
+    content: "\f0d9";
+    right: auto;
+    left: -8px;
+  }
+  .timeline-article .content-right:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .timeline-article p {
+    margin: 0;
+  }
+  .timeline-article p span.article-number {
+    display: none;
+  }
+  
+}
+/*===== // Resonsive Vertical Timeline =====*/
