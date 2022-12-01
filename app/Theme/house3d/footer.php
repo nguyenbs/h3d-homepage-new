@@ -108,36 +108,7 @@ global $footerSetting;
     </div>
 </footer>
 
-<!-- uptop -->
-<div id="uptop"  >
-    <i class="fas fa-chevron-up"></i>
-</div>
-
-<!-- uptop -->
 <script>
-    // uptop
-    $('#uptop').click(function (event) {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 1000);
-    });
-
-    $(window).scroll(function () {
-        var a = 500;
-        var pos = $(window).scrollTop();
-        if (pos > a) {
-            $("#uptop").css({
-                'opacity': 1,
-                'transition': 'all 0.5s '
-
-            });
-        } else
-            $("#uptop").css({
-                'opacity': 0
-            });
-
-    });
-
     // height same div
     if($(window).innerWidth()>= 768){
         var a= $('.sectwosub_contai').innerHeight();
