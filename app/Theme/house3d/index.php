@@ -396,7 +396,7 @@ global  $settingIndex ;
         </div>
         <?php
         $a = $settingIndex['Option']['value']['otherResources'];
-        if($a['blockIndex'] != 0) {
+        if($a['blockIndex'] != 0 && array_key_exists('blocks', $a)) {
             $blocks = $a['blocks'];
             if ($blocks) {
                 $blocks = array_merge($blocks);
@@ -572,7 +572,7 @@ global  $settingIndex ;
                             </div>
                         <?php }?>
                         <?php if(isset($album['Album']['img'][2]['src'])){?>
-                            <div class="feature_item long">
+                            <div class="feature_item">
                                 <a target="_blank" href="<?php echo @$album['Album']['img'][2]['link']; ?>">
                                     <figure class="item_img">
                                         <img src="<?php echo hashUrl(@$album['Album']['img'][2]['src']); ?>" width="100%">
@@ -692,7 +692,7 @@ global  $settingIndex ;
                         </div>
 
                         <div class="row">
-                            <div class="col-6 col-sm-4 col-md-6 col-xl-4 ">
+                            <div class="col-sm-6 text-right button_window">
                                 <!-- button -->
                                 <div class="oc_bh15_svg_4">
                                     <a class=" btn  oc_bh15_btn_svg  " href="<?php echo $settingIndex['Option']['value']['linkTaiUngDung'];?>" style="margin:0; width: 190px;" >
@@ -708,11 +708,22 @@ global  $settingIndex ;
                                     </a>
                                 </div><div class="clearfix">  </div>
                             </div>
-                            <div class="col-6 col-sm-6 col-md-6 col-xl-6  appdownload_hd_contai">
-                                <div class="appdownload_hd">
-                                    <a href="<?php echo $settingIndex['Option']['value']['UngDungThietKe3DLinkHDSD'];?>">Support & Learning</a>
-                                </div>
-                            </div>
+							<div class="col-sm-6 text-left button_window">
+								<!-- button -->
+								<div class="oc_bh15_svg_4">
+									<a class=" btn  oc_bh15_btn_svg  " href="<?php echo $settingIndex['Option']['value']['UngDungThietKe3DLinkHDSD'];?>" style="margin:0; width: 190px;" >
+										<span class="oc_bh15_btn_svg_label" style="font-size: 12px;">LEARN HOUSE3D</span>
+										<svg class="oc_bh15_btn_svg_border" preserveAspectRatio="none" viewBox="2 29.3 56.9 13.4" enable-background="new 2 29.3 56.9 13.4" width="140" >
+											<g class="oc_bh15_btn_svg_border_left ">
+												<path fill="none" stroke="#FFF" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
+											</g>
+											<g class="oc_bh15_btn_svg_border_right">
+												<path fill="none" stroke="#FFF" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
+											</g>
+										</svg>
+									</a>
+								</div><div class="clearfix">  </div>
+							</div>
                         </div>
                         <br>
                     </div>

@@ -81,7 +81,7 @@ global $downloadSetting;
                                     <div class="oc_bh15_svg_4">
                                         <!-- Win64 download button-->
                                         <a class=" btn  oc_bh15_btn_svg  " href="ms-windows-store://pdp/?productid=9N4F1R0M8NBH">
-                                            <span class="oc_bh15_btn_svg_label"><i class="fas fa-download index_fontawe" ></i>Windows Store</span>
+                                            <span class="oc_bh15_btn_svg_label"><i class="fas fa-download index_fontawe" ></i>Microsoft Store</span>
                                             <svg class="oc_bh15_btn_svg_border" preserveAspectRatio="none" viewBox="2 29.3 56.9 13.4" enable-background="new 2 29.3 56.9 13.4" width="140" >
                                                 <g class="oc_bh15_btn_svg_border_left ">
                                                     <path fill="none" stroke="#FFF" stroke-width="0.5" stroke-miterlimit="1" d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
