@@ -1,8 +1,8 @@
 <?php
 global $footerSetting;
 ?>
+<div id="fb-root"></div>
 <footer >
-	<div id="fb-root"></div>
     <div class="container-fluid">
         <div class="footer_top">
             <div class="h3d-container">
