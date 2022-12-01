@@ -327,7 +327,3 @@ template {
 [hidden] {
   display: none !important;
 }
-
-.fb_dialog_content > iframe {
-	bottom: 90px !important;
-}
