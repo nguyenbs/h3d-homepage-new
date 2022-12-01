@@ -275,7 +275,7 @@ global $footerSetting;
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -284,8 +284,8 @@ global $footerSetting;
      attribution=setup_tool
      page_id="195248311057812"
      theme_color="#67b868"
-     logged_in_greeting="Xin chào! Bạn muốn tìm hiểu về House3D? Hãy để chúng tôi giúp bạn."
-     logged_out_greeting="Xin chào! Bạn muốn tìm hiểu về House3D? Hãy để chúng tôi giúp bạn.">
+     logged_in_greeting="Welcome to House3D! Let me help you to discover our products and services..."
+     logged_out_greeting="Welcome to House3D! Hopefully you have got all necessary information.">
 </div>
 </body>
 </html>
